@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+}
+.logo {
+  font-size: 190%;
+  font-weight: bold;
+  color: white;
+}
+#botoes-topo ul {
+  display: flex;
+  list-style: none;
+  gap: 3%;
+}
+#botoes-topo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 10px 15px;
+}
+#botoes-topo a:hover {
+  color: gray;
+  border: 2px solid gray;
+}
+
+#foto {
+  /* position: relative; pedir ao professor ajuda para mexer nisso */
+  /* right: 50px; */
+  width: 550px;
+  height: 550px;
+  border-radius: 10%;
+  object-fit: cover;
+  /* box-shadow: 0 0 15 rgba(255, 255, 255, 0.05); ver com o professor oq isso aqui tem de diferença pois nao vi nem uma */
+  margin-bottom: 25px;
+}
+.inicio {
+
+  justify-content: space-between; /* ver com o professor formas para melhorar em dispositivos moveis com a tela mais estreita */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px 20px;
+}
+.inicio h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+.inicio p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+#redes-sociais {
+}
+#redesSociais {
+  padding: 0;
+  list-style: none;
+  margin: 30px;
+  color: white;
+}
+#redesSociais li {
+  margin: 10px;
+}
+#redesSociais li a {
+  font-size: 50px;
+  color: white;
+  /* border-radius: 20px;
+  border: 2px solid white;
+  padding: 5px 15px;  pedir ajuda para o professor para ajeitar isso aqui e deixar do jeito  eu quero */
+}
+#linkedin:hover {
+  color: #0077b5; /* exemplo: azul do LinkedIn */
+}
+#github:hover {
+  color: purple; /* exemplo: azul do LinkedIn */
+}
+#insta:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
