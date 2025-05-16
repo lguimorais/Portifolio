@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
+  color: white;
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -17,11 +19,7 @@ header {
 .material-symbols-outlined {
   color: white;
   font-size: 5rem;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 #botoes-topo ul {
@@ -44,14 +42,13 @@ header {
   transform: scale(1.1);
   transition: 0.5s;
 }
-#btn-inicio{
-  box-shadow: 4px 4px 4px  rgba(255, 255, 255, 0.527); /* deslocamento-x, deslocamento-y, desfoque, cor */
+#btn-inicio {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.527); /* deslocamento-x, deslocamento-y, desfoque, cor */
 }
 
 #foto {
-   /* position: relative; */
-   left: 50%; 
-  
+  /* position: relative; */
+  left: 50%;
   width: 550px;
   height: 550px;
   border-radius: 10%;
@@ -59,24 +56,65 @@ header {
   margin-bottom: 25px;
 }
 .inicio {
-
-  justify-content: space-between; /* ver com o professor formas para melhorar em dispositivos moveis com a tela mais estreita */
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 80px 20px;
 }
+
 .inicio h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: white;
 }
+
 .inicio p {
   font-size: 1.2rem;
   color: white;
   margin-bottom: 30px;
 }
+
+#curriculo {
+  position: absolute;
+  bottom: 18vw;
+  left: 48vw;
+  font-size: 95%;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.527);
+}
+
+#curriculo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column; /* Alinha os itens em uma coluna em vez de linha */
+    padding: 50px 10px;
+    text-align: center;
+  }
+
+  .inicio h1 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .inicio p {
+    font-size: 1rem; /* Reduz o tamanho do parágrafo */
+  }
+
+  #curriculo {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+  }
+}
+
 #redes-sociais {
 }
 #redesSociais {
@@ -96,12 +134,12 @@ header {
   padding: 5px 15px;  pedir ajuda para o professor para ajeitar isso aqui e deixar do jeito  eu quero */
 }
 #linkedin:hover {
-  color: #0077b5; 
+  color: #0077b5;
   transform: scale(1.1);
   transition: 0.5s;
 }
 #github:hover {
-  color: purple; 
+  color: purple;
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -119,16 +157,26 @@ header {
   transform: scale(1.1);
   transition: 0.5s;
 }
-#curriculo{
-  font-size: 95%;
-  padding: 12px 24px;
-  background-color: black;
-  color: white;
-  border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 4px 4px 4px  rgba(255, 255, 255, 0.527); /* deslocamento-x, deslocamento-y, desfoque, cor */
+.about {
+  display: flex;
+  flex-direction: column;
 }
-#curriculo:hover{
-  transform: scale(1.1);
-  transition: 1s;
+.informacoes {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding: 30px 10px;
+  background-color: black;
+  color: #ccc;
+  text-decoration: none;
+}
+.informacoes h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+.informacoes p {
+  font-size: 1.2rem;
+}
+#Ola {
+  color: rgb(117, 0, 0);
 }
