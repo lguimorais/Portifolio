@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  color: white;
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+}
+.material-symbols-outlined {
+  color: white;
+  font-size: 6rem;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+#botoes-topo ul {
+  display: flex;
+  list-style: none;
+  
+}
+#botoes-topo li{
+  display: flex;
+}
+#botoes-topo a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 10px 15px;
+}
+#botoes-topo a:hover {
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.425); /* deslocamento-x, deslocamento-y, desfoque, cor */
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#btn-inicio {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.527); /* deslocamento-x, deslocamento-y, desfoque, cor */
+}
+#foto {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+#info-inicio{
+  min-width:28vw;
+}
+.inicio {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.inicio h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  color: white;
+  min-height: 2rem;
+  margin-bottom: 30px;
+
+}
+.inicio-centro-direita{
+  display: flex;
+  gap:22vw
+}
+#tecnologias {
+  display: flex;
+  box-sizing: 10px;
+  flex-direction: row;
+  gap: 20px;
+    list-style: none;
+    padding-bottom: 2;
+    padding-top: 2;
+    padding: 0;
+}
+
+#tecnologias li a {
+  font-size: 2rem;
+  padding: 1;
+  color: inherit;
+  text-decoration: none;
+
+}
+
+
+#curriculo {
+  font-size: 95%;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.527);
+}
+
+#curriculo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Media Query para telas pequenas */
+@media all and (max-width: 700px) {
+  .inicio {
+    flex-direction: column; /* Alinha os itens em uma coluna em vez de linha */
+    padding: 50px 10px;
+    text-align: center;
+  }
+
+  .inicio h1 {
+    flex-direction: column;
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+  .inicio-centro-direita{
+    flex-direction: column;
+  }
+  #redesSociais{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  #botoes-topo a{
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+
+    .material-symbols-outlined {
+      color: white;
+      font-size: 3.8rem;
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; }
+
+  #curriculo {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */    
+  }
+  .container-curriculo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#redes-sociais {
+  display: flex;
+  font-size: 1rem;
+
+}
+#redesSociais {
+  padding: 0;
+  list-style: none;
+  margin: 30px;
+  color: white;
+}
+#redesSociais li {
+  margin: 10px;
+}
+#redesSociais li a {
+  font-size: 50px;
+  color: white;
+  /* border-radius: 20px;
+  border: 2px solid white;
+  padding: 5px 15px;  pedir ajuda para o professor para ajeitar isso aqui e deixar do jeito  eu quero */
+}
+#linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#github:hover {
+  color: purple;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#insta:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.informacoes {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding: 30px 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+.informacoes h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+.informacoes p {
+  font-size: 1.2rem;
+}
+#Ola {
+  color: rgb(117, 0, 0);
+}
+.projetos{
+  display: flex;
+  flex-direction: row;
+}
+#projetos{
+  
+}
