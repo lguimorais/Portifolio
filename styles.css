@@ -228,10 +228,41 @@ header {
 #Ola {
   color: rgb(117, 0, 0);
 }
-.projetos{
+
+.container-projetos {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
-#projetos{
+
+.projetos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.projetos li {
+  border: 2px solid white;
+  padding: 15px;
+  color: white;
+  font-style: none;
+  text-decoration: none;
+  width: 350px;
+  border-radius: 8px;
+}
+.projetos li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.projetos li:hover {
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.425); /* deslocamento-x, deslocamento-y, desfoque, cor */
+  transform: scale(1.1);
+  transition: 0.5s;
   
 }

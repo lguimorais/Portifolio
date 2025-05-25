@@ -43,27 +43,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function getApiGItthub() {
+function getApiGitHub() {
   const ul = document.querySelector(".projetos");
   fetch("https://api.github.com/users/lguimorais/repos")
     .then(async (res) => {
       if (!res.ok) {
         throw new Error(res.status);
       }
-      var data = await res.json();
-      data.map((item) => {
-        let li = document.createElement("li");
+      const data = await res.json();
+      data.forEach((item) => {
+        const li = document.createElement("li");
         li.innerHTML = `
-<strong>${item.name.toUpperCase()}</strong>
-<span>URL:${item.url}</span>
-<span>Data Criação:${Intl.DateTimeFormat("pt-BR").format(
-          new Date(item.created_at)
-        )}</span>
-
-`;
-ul.appendChild(li);
+          <strong>${item.name.toUpperCase()}</strong><br>
+          <a href="${item.html_url}" target="_blank">Acessar Repositório</a><br>
+          <span>Data de Criação: ${Intl.DateTimeFormat("pt-BR").format(
+            new Date(item.created_at)
+          )}</span>
+        `;
+        ul.appendChild(li);
       });
     })
     .catch((e) => console.log(e));
 }
-getApiGItthub();
+getApiGitHub();
